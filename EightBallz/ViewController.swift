@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let ballArr: [UIImage] = [UIImage(named: "ball1.png")!,
+    let ballArray: [UIImage] = [UIImage(named: "ball1.png")!,
                                 UIImage(named: "ball2.png")!,
                                 UIImage(named: "ball3.png")!,
                                 UIImage(named: "ball4.png")!,
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func askButtonPressed(_ sender: UIButton) {
         
-        imageView.image = ballArr[Int.random(in: 0...4)]
+        imageView.image = ballArray[Int.random(in: 0...4)]
     }
 }
 
