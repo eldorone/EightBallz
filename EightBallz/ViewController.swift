@@ -16,11 +16,11 @@ class ViewController: UIViewController {
                                 UIImage(named: "ball5.png")!
                               ]
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imgView: UIImageView!
 
     @IBAction func askBtnPressed(_ sender: UIButton) {
         
-        imageView.image = ballArr[Int.random(in: 0...4)]
+        imgView.image = ballArr[Int.random(in: 0...4)]
     }
 }
 
