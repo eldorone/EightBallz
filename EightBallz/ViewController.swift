@@ -2,14 +2,14 @@
 //  ViewController.swift
 //  EightBallz
 //
-//  Created by Eldor Alikuvatov on 2022/10/17.
+//  Created by Eldor Alikuvvatov on 2022/10/17.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    let ballArray: [UIImage] = [UIImage(named: "ball1.png")!,
+    let ballArr: [UIImage] = [UIImage(named: "ball1.png")!,
                                 UIImage(named: "ball2.png")!,
                                 UIImage(named: "ball3.png")!,
                                 UIImage(named: "ball4.png")!,
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func askButtonPressed(_ sender: UIButton) {
         
-        imageView.image = ballArray[Int.random(in: 0...4)]
+        imageView.image = ballArr[Int.random(in: 0...4)]
     }
 }
 
